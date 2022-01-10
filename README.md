@@ -87,3 +87,5 @@ Durant un premier stage en tant que développeur web chez Booki, une petite entr
 <hr>
 
 <b>RESULTAT : </b>
+
+![booki](https://user-images.githubusercontent.com/94392055/148818049-f8f5b147-5c25-40d8-bd34-413ae0bd725d.png)
