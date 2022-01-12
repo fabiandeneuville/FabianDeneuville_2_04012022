@@ -77,13 +77,12 @@ main{
     /* search section title + subtitile style end */
     /*search bar style start */
 .search-form{
-    position:relative;
+    display:flex;
     height:50px;
+    width:50%;
     border-radius:20px;
 }
 .search-form label{
-    position:absolute;
-    left:0px;
     width:50px;
     height:50px;
     text-align:center;
@@ -91,24 +90,22 @@ main{
     line-height: 50px;;
     background-color: #f2f2f2;
     border-radius:20% 0 0 20%;
+    flex-shrink:0;
 }
 .search-form input[type='search']{
-    position:absolute;
-    left:50px;
     border:none; /* stripping the button from borders before adding top and bottom borders only */
     border-top:1px solid #f2f2f2;
     border-bottom:1px solid #f2f2f2;
-    width: 250px;
+    width: calc(100% - 80px);
     height:50px;
     font-size:18px;
     font-weight:800;
     color:#000000;
     margin:0px;
     padding:0px 15px;
+    flex-shrink:1;
 }
 .search-btn-desktop{
-    position:absolute;
-    left:300px;
     border:none;
     border-radius:0 20px 20px 0;
     background-color: #0065FC;
@@ -119,10 +116,9 @@ main{
     font-weight:800;
     color:#f1f1f1;
     cursor: pointer;
+    flex-shrink:0;
 }
 .search-btn-mobile{ /* using button as submit input */
-    position:absolute;
-    left:280px;
     height:50px;
     width:50px;
     border:none;
@@ -131,6 +127,7 @@ main{
     color:#f1f1f1;
     display:none;
     cursor: pointer;
+    flex-shrink: 0;
 }
     /* search bar style end */
     /* filters style start */
@@ -464,7 +461,6 @@ footer{
     header{
         flex-direction:column;
         width: 100%;
-        /* padding:20px 0px; */
     }
     .big-header-logo-img{
         display:block;
@@ -487,14 +483,11 @@ footer{
     }
     .search-btn-mobile{
         display:inline-block;
-        left:430px;
+        margin-left:-20px;
     }
     .search-form{
-        width:500px;
+        width:100%;
         margin:0px auto;
-    }
-    .search-form input[type='search']{
-        width:400px;
     }
     .filters-bloc h3{
         display:block;
@@ -527,15 +520,6 @@ footer{
     }
 }
 @media screen and (min-width:768px) and (max-width:992px){
-    .search-btn-mobile{
-        left:430px;
-    }
-    .search-form{
-        width:500px;
-    }
-    .search-form input[type='search']{
-        width:400px;
-    }
     .hotel-card{
         width:42.5%;
     }
@@ -589,40 +573,8 @@ footer{
         margin:0 auto 5% auto;
     }
 }
-@media screen and (min-width:450px) and (max-width:768px){
-    .search-btn-mobile{
-        left:330px;
-    }
-    .search-form{
-        width:380px;
-    }
-    .search-form input[type='search']{
-        width:300px;
-    }  
-}
 @media screen and (max-width:450px){
     .item-menu{
         font-size:15px;
-    }
-    .search-btn-mobile{
-        left:270px;
-    }
-    .search-form input[type='search']{
-        width:250px;
-    }
-    .search-form{
-        width:320px;
-    }
-}
-@media screen and (max-width:350px){
-    .search-form{
-        width:280px;
-        margin:0 auto;
-    }
-    .search-btn-mobile{
-        left:230px;
-    }
-    .search-form input[type='search']{
-        width:210px;
     }
 }
