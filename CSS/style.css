@@ -310,12 +310,17 @@ a.more{
     transform:translate(-50%, -50%);
 }
 .ranking-card-body{
+    display:flex;
+    flex-direction: column;
     width:50%;
     padding:2% 5% 2% 5%;
 }
 .ranking-card-body-item{
     margin:0;
     padding:2%;
+}
+.ranking-card-body .hotel-ranking{
+    margin-top:auto;
 }
     /* rankingg (right pannel) style end */
 /* hotel section style end */
