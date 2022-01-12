@@ -96,7 +96,7 @@ main{
     border:none; /* stripping the button from borders before adding top and bottom borders only */
     border-top:1px solid #f2f2f2;
     border-bottom:1px solid #f2f2f2;
-    width: calc(100% - 100px);
+    width: calc(100% - 80px);
     height:50px;
     font-size:18px;
     font-weight:800;
@@ -461,7 +461,6 @@ footer{
     header{
         flex-direction:column;
         width: 100%;
-        /* padding:20px 0px; */
     }
     .big-header-logo-img{
         display:block;
@@ -484,14 +483,11 @@ footer{
     }
     .search-btn-mobile{
         display:inline-block;
-        /* left:430px; */
+        margin-left:-20px;
     }
     .search-form{
         width:100%;
         margin:0px auto;
-    }
-    .search-form input[type='search']{
-        width:400px;
     }
     .filters-bloc h3{
         display:block;
@@ -524,15 +520,6 @@ footer{
     }
 }
 @media screen and (min-width:768px) and (max-width:992px){
-    /* .search-btn-mobile{
-        left:430px;
-    } */
-    /* .search-form{
-        width:500px;
-    }
-    .search-form input[type='search']{
-        width:400px;
-    } */
     .hotel-card{
         width:42.5%;
     }
@@ -586,40 +573,8 @@ footer{
         margin:0 auto 5% auto;
     }
 }
-/* @media screen and (min-width:450px) and (max-width:768px){
-    .search-btn-mobile{
-        left:330px;
-    }
-    .search-form{
-        width:380px;
-    }
-    .search-form input[type='search']{
-        width:300px;
-    }  
-}
 @media screen and (max-width:450px){
     .item-menu{
         font-size:15px;
     }
-    .search-btn-mobile{
-        left:270px;
-    }
-    .search-form input[type='search']{
-        width:250px;
-    }
-    .search-form{
-        width:320px;
-    }
-} */
-/* @media screen and (max-width:350px){
-    .search-form{
-        width:280px;
-        margin:0 auto;
-    }
-    .search-btn-mobile{
-        left:230px;
-    }
-    .search-form input[type='search']{
-        width:210px;
-    }
-} */
+}
