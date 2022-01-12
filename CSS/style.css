@@ -170,6 +170,15 @@ main{
     height:50px;
     line-height: 50px;
 }
+.availability-info span{
+    display: inline-block;
+    color: #0065fc;
+    border: 1px solid #0065fc;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border-radius: 50%;
+}
     /* filter style end */
 /* search section style end */
 /* hotel section style start */
