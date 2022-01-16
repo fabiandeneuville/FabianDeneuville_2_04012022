@@ -70,10 +70,11 @@ Durant un premier stage en tant que développeur web chez Booki, une petite entr
 <b> ⇒ Aucun framework ou préprocesseur CSS n'a été utilisé.</b>
 
 - Il est important d'utiliser des balises sémantiques (type 'main', 'header', 'nav', etc.).
-- 
+
 <b> ⇒ Les balises sémantiques ont été utilisées à chaque fois que cela était possible. Un Header, un Footer et un Main regroupant une section Search, une section "Hébergements" contenant un article et un aside et enfin une troisième section "Activités".</b>
 
 - Le code doit être valide aux validateurs W3C HTML et CSS.
+
 <b> ⇒ Les deux fichiers HTML et CSS ont été passés au validateur W3C. Une alerte côté HTML concernant l'absence de titres pour la section hébergements mais ceux-ci sont présents dans les éléments enfants. </b>
 
 - La maquette doit être compatible avec les dernières versions de Google Chrome et Mozilla Firefox. Il faudra tester le prototype sur ces deux navigateurs.
